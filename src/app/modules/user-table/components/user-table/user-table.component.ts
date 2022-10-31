@@ -23,8 +23,8 @@ export class UserTableComponent extends CommonTableComponent implements OnInit {
 
   private getUsers(): void {
     this.userService.getUsers()
-    .subscribe((dataUsers: User[]) => {
-      this.initTable(dataUsers);
-    });
+      .subscribe((dataUsers: User[]) => {
+        this.initTable(dataUsers);
+      });
   }
 }
